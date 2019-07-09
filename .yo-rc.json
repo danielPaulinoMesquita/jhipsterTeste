@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.testejhipster.daniel",
+      "nativeLanguage": "pt-br"
+    },
+    "jhipsterVersion": "6.1.2",
+    "applicationType": "monolith",
+    "baseName": "testehipster",
+    "packageName": "com.testejhipster.daniel",
+    "packageFolder": "com/testejhipster/daniel",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZGY0NmJjZDIzYWE2ODg2YTc0NTE1ZTNhOTAyNGM3MjllYzc5MjI2YjU0NTBhZTRhN2YyNzIxYzFmZWYxNGVmY2ZiNWU2NDhjYWUyNTA3ODYyMGI2MTAxZDBjMmNhNTM5ZDRiYTE2YTczOTJjNjFmYTVmZDZjZDJlMGY1NTljMWQ=",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "minty",
+    "clientThemeVariant": "dark",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "pt-br",
+    "languages": ["pt-br", "en", "es"]
+  }
+}
