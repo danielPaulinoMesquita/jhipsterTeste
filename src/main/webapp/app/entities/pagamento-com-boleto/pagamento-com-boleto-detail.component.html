@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="pagamentoComBoleto">
+            <h2><span jhiTranslate="testehipsterApp.pagamentoComBoleto.detail.title">Pagamento Com Boleto</span> {{pagamentoComBoleto.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="testehipsterApp.pagamentoComBoleto.dataVencimento">Data Vencimento</span></dt>
+                <dd>
+                    <span>{{pagamentoComBoleto.dataVencimento}}</span>
+                </dd>
+                <dt><span jhiTranslate="testehipsterApp.pagamentoComBoleto.dataPagamento">Data Pagamento</span></dt>
+                <dd>
+                    <span>{{pagamentoComBoleto.dataPagamento}}</span>
+                </dd>
+                <dt><span jhiTranslate="testehipsterApp.pagamentoComBoleto.pagamento">Pagamento</span></dt>
+                <dd>
+                    <div *ngIf="pagamentoComBoleto.pagamento">
+                        <a [routerLink]="['/pagamento', pagamentoComBoleto.pagamento?.id, 'view']">{{pagamentoComBoleto.pagamento?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/pagamento-com-boleto', pagamentoComBoleto.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

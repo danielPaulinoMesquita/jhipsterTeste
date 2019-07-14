@@ -14,6 +14,25 @@
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235754_added_entity_Produto.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235755_added_entity_Categoria.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235756_added_entity_Pedido.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235757_added_entity_Pagamento.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235758_added_entity_PagamentoComBoleto.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235759_added_entity_PagamentoComCartao.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235800_added_entity_Cliente.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235801_added_entity_Telefone.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235802_added_entity_Endereco.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235803_added_entity_Cidade.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235804_added_entity_Estado.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235805_added_entity_ItemPedido.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20190709235755_added_entity_constraints_Categoria.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235756_added_entity_constraints_Pedido.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235758_added_entity_constraints_PagamentoComBoleto.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235759_added_entity_constraints_PagamentoComCartao.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235801_added_entity_constraints_Telefone.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235802_added_entity_constraints_Endereco.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190709235803_added_entity_constraints_Cidade.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

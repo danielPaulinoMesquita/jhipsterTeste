@@ -1,0 +1,10 @@
+{
+  "testehipsterApp": {
+    "EstadoPagamento": {
+      "null": "",
+      "PENDENTE": "PENDENTE",
+      "QUITADO": "QUITADO",
+      "CANCELADO": "CANCELADO"
+    }
+  }
+}

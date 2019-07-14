@@ -1,0 +1,20 @@
+{
+    "name": "Pagamento",
+    "fields": [
+        {
+            "fieldName": "estado",
+            "fieldType": "EstadoPagamento",
+            "fieldValues": "PENDENTE,QUITADO,CANCELADO"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190709235757",
+    "entityTableName": "pagamento",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

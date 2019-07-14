@@ -1,0 +1,9 @@
+{
+  "testehipsterApp": {
+    "TipoCliente": {
+      "null": "",
+      "PESSOAFISICA": "PESSOAFISICA",
+      "PESSOAJURIDICA": "PESSOAJURIDICA"
+    }
+  }
+}

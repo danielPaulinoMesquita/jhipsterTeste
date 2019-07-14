@@ -1,0 +1,63 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="testehipsterApp.pagamentoComCartao.home.title">Pagamento Com Cartaos</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-pagamento-com-cartao" [routerLink]="['/pagamento-com-cartao/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="testehipsterApp.pagamentoComCartao.home.createLabel">
+            Create new Pagamento Com Cartao
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="alert alert-warning" *ngIf="pagamentoComCartaos?.length === 0">
+        <span jhiTranslate="testehipsterApp.pagamentoComCartao.home.notFound">No pagamentoComCartaos found</span>
+    </div>
+    <div class="table-responsive" *ngIf="pagamentoComCartaos?.length > 0">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="testehipsterApp.pagamentoComCartao.numeroDeParcelas">Numero De Parcelas</span></th>
+            <th><span jhiTranslate="testehipsterApp.pagamentoComCartao.pagamento">Pagamento</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let pagamentoComCartao of pagamentoComCartaos ;trackBy: trackId">
+                <td><a [routerLink]="['/pagamento-com-cartao', pagamentoComCartao.id, 'view' ]">{{pagamentoComCartao.id}}</a></td>
+                <td>{{pagamentoComCartao.numeroDeParcelas}}</td>
+                <td>
+                    <div *ngIf="pagamentoComCartao.pagamento">
+                        <a [routerLink]="['../pagamento', pagamentoComCartao.pagamento?.id, 'view' ]" >{{pagamentoComCartao.pagamento?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group">
+                        <button type="submit"
+                                [routerLink]="['/pagamento-com-cartao', pagamentoComCartao.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/pagamento-com-cartao', pagamentoComCartao.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', 'pagamento-com-cartao', { outlets: { popup: pagamentoComCartao.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

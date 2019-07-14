@@ -2,6 +2,15 @@
 Main page styles
 ========================================================================== */
 
+section {
+  /* Configurações para tag section */
+  padding-top: 65px;
+  /*Distância da parte superior */
+  padding-bottom: 20px;
+  /*Distância da parte inferior */
+  min-height: 100vh;
+  /*Altura mínima */
+}
 .hipster {
   display: inline-block;
   width: 347px;

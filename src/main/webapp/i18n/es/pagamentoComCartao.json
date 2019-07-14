@@ -1,0 +1,23 @@
+{
+  "testehipsterApp": {
+    "pagamentoComCartao": {
+      "home": {
+        "title": "Pagamento Com Cartaos",
+        "createLabel": "Crear nuevo Pagamento Com Cartao",
+        "createOrEditLabel": "Crear o editar Pagamento Com Cartao",
+        "notFound": "No Pagamento Com Cartao found"
+      },
+      "created": "Un nuevo Pagamento Com Cartao ha sido creado con el identificador {{ param }}",
+      "updated": "Un Pagamento Com Cartao ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Pagamento Com Cartao ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Pagamento Com Cartao {{ id }}?"
+      },
+      "detail": {
+        "title": "Pagamento Com Cartao"
+      },
+      "numeroDeParcelas": "Numero De Parcelas",
+      "pagamento": "Pagamento"
+    }
+  }
+}

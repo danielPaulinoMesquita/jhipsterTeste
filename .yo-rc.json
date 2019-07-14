@@ -34,6 +34,7 @@
     "otherModules": [],
     "enableTranslation": true,
     "nativeLanguage": "pt-br",
-    "languages": ["pt-br", "en", "es"]
+    "languages": ["pt-br", "en", "es"],
+    "enableHibernateCache": false
   }
 }

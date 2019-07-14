@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="itemPedido">
+            <h2><span jhiTranslate="testehipsterApp.itemPedido.detail.title">Item Pedido</span> {{itemPedido.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="testehipsterApp.itemPedido.desconto">Desconto</span></dt>
+                <dd>
+                    <span>{{itemPedido.desconto}}</span>
+                </dd>
+                <dt><span jhiTranslate="testehipsterApp.itemPedido.quantidade">Quantidade</span></dt>
+                <dd>
+                    <span>{{itemPedido.quantidade}}</span>
+                </dd>
+                <dt><span jhiTranslate="testehipsterApp.itemPedido.preco">Preco</span></dt>
+                <dd>
+                    <span>{{itemPedido.preco}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/item-pedido', itemPedido.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+{
+    "name": "Cliente",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cpfOuCnpj",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tipo",
+            "fieldType": "TipoCliente",
+            "fieldValues": "PESSOAFISICA,PESSOAJURIDICA"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "telefone",
+            "otherEntityRelationshipName": "cliente",
+            "relationshipName": "telefone"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "endereco",
+            "otherEntityRelationshipName": "cliente",
+            "relationshipName": "endereco"
+        }
+    ],
+    "changelogDate": "20190709235800",
+    "entityTableName": "cliente",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

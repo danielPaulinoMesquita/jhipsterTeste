@@ -1,0 +1,33 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="pagamentoComCartao">
+            <h2><span jhiTranslate="testehipsterApp.pagamentoComCartao.detail.title">Pagamento Com Cartao</span> {{pagamentoComCartao.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="testehipsterApp.pagamentoComCartao.numeroDeParcelas">Numero De Parcelas</span></dt>
+                <dd>
+                    <span>{{pagamentoComCartao.numeroDeParcelas}}</span>
+                </dd>
+                <dt><span jhiTranslate="testehipsterApp.pagamentoComCartao.pagamento">Pagamento</span></dt>
+                <dd>
+                    <div *ngIf="pagamentoComCartao.pagamento">
+                        <a [routerLink]="['/pagamento', pagamentoComCartao.pagamento?.id, 'view']">{{pagamentoComCartao.pagamento?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/pagamento-com-cartao', pagamentoComCartao.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

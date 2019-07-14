@@ -1,0 +1,28 @@
+{
+    "name": "PagamentoComCartao",
+    "fields": [
+        {
+            "fieldName": "numeroDeParcelas",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "pagamento",
+            "otherEntityRelationshipName": "pagamentoComCartao",
+            "relationshipName": "pagamento",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190709235759",
+    "entityTableName": "pagamento_com_cartao",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

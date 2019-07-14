@@ -1,0 +1,24 @@
+{
+  "testehipsterApp": {
+    "pagamentoComBoleto": {
+      "home": {
+        "title": "Pagamento Com Boletos",
+        "createLabel": "Criar novo Pagamento Com Boleto",
+        "createOrEditLabel": "Criar ou editar Pagamento Com Boleto",
+        "notFound": "Nenhum Pagamento Com Boleto encontrado"
+      },
+      "created": "Um novo Pagamento Com Boleto foi criado com o identificador {{ param }}",
+      "updated": "Um Pagamento Com Boleto foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Pagamento Com Boleto foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Pagamento Com Boleto {{ id }}?"
+      },
+      "detail": {
+        "title": "Pagamento Com Boleto"
+      },
+      "dataVencimento": "Data Vencimento",
+      "dataPagamento": "Data Pagamento",
+      "pagamento": "Pagamento"
+    }
+  }
+}
